@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio – 3D Modeling Projects</title>
+    <title>Portfolio – Diogo Parcerias</title>
     <style>
         body {
             font-family: Monospace, Arial, sans-serif;
@@ -185,97 +185,37 @@
         .fullscreen:target {
             display: flex;
         }
-
-        /* Add responsive styles for mobile devices */
-        @media (max-width: 768px) {
-            body {
-                font-size: 14px; /* Adjust font size for smaller screens */
-            }
-
-            header h1 {
-                font-size: 2rem; /* Reduce header title size */
-            }
-
-            header p {
-                font-size: 1rem; /* Reduce header subtitle size */
-            }
-
-            nav {
-                flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
-                padding: 0.5rem 0;
-            }
-
-            nav button {
-                font-size: 0.9rem; /* Reduce button font size */
-                padding: 0.4rem 0.8rem; /* Adjust button padding */
-                margin: 0.3rem; /* Reduce button margin */
-            }
-
-            .container {
-                padding: 0 0.5rem; /* Reduce container padding */
-            }
-
-            .project {
-                padding: 1rem; /* Reduce project padding */
-            }
-
-            .scroll-gallery {
-                gap: 0.5rem; /* Reduce gap between images */
-            }
-
-            .scroll-gallery img {
-                max-height: 300px; /* Limit image height for smaller screens */
-            }
-
-            .center-gallery img {
-                max-width: 100%; /* Ensure images fit within the screen */
-                max-height: 300px; /* Limit image height */
-            }
-
-            .fullscreen img {
-                max-width: 80%; /* Adjust fullscreen image size */
-                max-height: 80%;
-            }
-
-            footer {
-                font-size: 0.8rem; /* Reduce footer font size */
-            }
-        }
-
-        /* Add styles for very small screens */
-        @media (max-width: 480px) {
-            nav {
-                flex-direction: column; /* Stack navigation buttons vertically */
-                align-items: center;
-            }
-
-            nav button {
-                width: 100%; /* Make buttons full-width */
-                margin: 0.2rem 0; /* Adjust margin for stacked buttons */
-            }
-
-            .scroll-gallery img {
-                max-height: 200px; /* Further limit image height */
-            }
-
-            .center-gallery img {
-                max-height: 200px; /* Further limit image height */
-            }
-        }
     </style>
 </head>
 <body>
     <header>
         <nav>
+            <button onclick="document.getElementById('projectDM').scrollIntoView({ behavior: 'smooth' });">Digital Marketing</button>
             <button onclick="document.getElementById('projectGD').scrollIntoView({ behavior: 'smooth' });">Graphic Design</button>
             <button onclick="document.getElementById('project3D').scrollIntoView({ behavior: 'smooth' });">3D Modeling</button>
-            <button onclick="document.getElementById('projectDM').scrollIntoView({ behavior: 'smooth' });">Digital Marketing</button>
             <button onclick="document.getElementById('projectUI').scrollIntoView({ behavior: 'smooth' });">UI Design</button>
             <button onclick="document.getElementById('projectF').scrollIntoView({ behavior: 'smooth' });">Freelance</button>
         </nav>
     </header>
 
     <div class="container">
+        <div class="projectDM" id="projectDM">
+            <h2>Digital Marketing</h2>
+            <p>A university project where I had to create a marketing campaign for the nordic energry drink "Explo".</p>
+            <div class="project">
+                <h3>Digital Marketing</h3>
+                <div class="scroll-gallery">
+                    <img src="uniwork/Digital%20Marketing/6.jpg" alt="Poster 1">
+                    <img src="uniwork/Digital%20Marketing/2.png" alt="Poster 1">
+                    <img src="uniwork/Digital%20Marketing/4.png" alt="Poster 1">
+                    <img src="uniwork/Digital%20Marketing/8.png" alt="Poster 1">
+                    <img src="uniwork/Digital%20Marketing/1.jpg" alt="Poster 1">
+                    <img src="uniwork/Digital%20Marketing/3.jpg" alt="Poster 1">
+                    <img src="uniwork/Digital%20Marketing/7.png" alt="Poster 1">
+                </div>
+            </div>
+        </div>
+
         <div class="projectGD" id="projectGD">
             <h2>Graphic Design</h2>
             <p>A university project where I had to create the branding for a fake festival happening in Norway.</p>
@@ -333,9 +273,7 @@
         <div class="project">
             <h2>Ukelele</h2>
             <div class="scroll-gallery">
-                <img src="uniwork/3D Modelling/oblig1DiogoParcerias/1.jpg" alt="Ukulele render">
                 <img src="uniwork/3D Modelling/oblig1DiogoParcerias/4.jpg" alt="Ukulele render">
-                <img src="uniwork/3D Modelling/oblig1DiogoParcerias/3.jpg" alt="Ukulele render">
                 <img src="uniwork/3D Modelling/oblig1DiogoParcerias/2.jpg" alt="Ukulele render">
             </div>
         </div>
@@ -359,22 +297,6 @@
                 <img src="uniwork/3D Modelling/Oblig3DiogoParcerias/6.jpg" alt="Oblig3 render">
                 <img src="uniwork/3D Modelling/Oblig3DiogoParcerias/7.jpg" alt="Oblig3 render">
                 <img src="uniwork/3D Modelling/Oblig3DiogoParcerias/8.jpg" alt="Oblig3 render">
-            </div>
-        </div>
-    </div>
-    <div class="projectDM" id="projectDM">
-        <h2>Digital Marketing</h2>
-        <p>A university project where I had to create a marketing campaign for the nordic energry drink "Explo".</p>
-        <div class="project">
-            <h3>Digital Marketing</h3>
-            <div class="scroll-gallery">
-                <img src="uniwork/Digital%20Marketing/6.jpg" alt="Poster 1">
-                <img src="uniwork/Digital%20Marketing/2.png" alt="Poster 1">
-                <img src="uniwork/Digital%20Marketing/4.png" alt="Poster 1">
-                <img src="uniwork/Digital%20Marketing/8.png" alt="Poster 1">
-                <img src="uniwork/Digital%20Marketing/7.png" alt="Poster 1">
-                <img src="uniwork/Digital%20Marketing/3.jpg" alt="Poster 1">
-                <img src="uniwork/Digital%20Marketing/1.jpg" alt="Poster 1">
             </div>
         </div>
     </div>
@@ -525,4 +447,3 @@
     </script>
 </body>
 </html>
-
